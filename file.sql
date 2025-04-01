@@ -1,3 +1,5 @@
+-- 1
+
 SELECT 
     CONCAT(p.last_name, ' ', p.first_name) AS "ФИО пациента",
     e.create_date AS "Дата обращения",
@@ -11,7 +13,7 @@ JOIN
 WHERE 
     p.last_name = 'Иванов' AND p.first_name = 'Иван';
 
-
+-- 2
 ALTER TABLE Patients
 ADD COLUMN sex TINYINT(1) DEFAULT 0 NOT NULL COMMENT '0-неопределено, 1-М, 2-Ж';
 
